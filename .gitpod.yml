@@ -3,6 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: make
+  - init: curl -sSL https://install.python-poetry.org | python3 -; make install-dev; make install-db
+
 image:
   file: .gitpod.dockerfile
