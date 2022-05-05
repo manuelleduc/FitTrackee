@@ -8,7 +8,7 @@ tasks:
   - init: psql -c "create user postgres password 'postgres'"
   - init: psql -c 'create database fittrackee with owner postgres'
   - init: psql -c 'create database fittrackee_test with owner postgres'
-  - init: make install-db
+  - command: make install-db
 
 image:
   file: .gitpod.dockerfile
